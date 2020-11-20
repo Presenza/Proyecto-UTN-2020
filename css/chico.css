@@ -1,0 +1,194 @@
+
+
+
+nav{
+
+    display: block;
+    top: 0;
+    text-align: center;
+    margin: auto;   
+}
+
+nav ul{
+    overflow: hidden;
+    position: none;
+}
+
+nav ul li{
+    display: inline;  
+    /* background-color: red; */
+    text-align: center;   
+}
+
+
+header{
+    background-image: none;
+    height: 100%;
+    position: none;
+    background-image: url('../header/imagen/puerto\ maderogrande.jpg');
+  
+}
+
+header h1{
+    font-size: 1.7em;
+    margin-top: 2em;
+    padding-top: 200px;
+    /* color: black; */
+    padding-left: 30px;
+    /* background-color: burlywood; */
+    margin-left: 110px;
+    margin-bottom: 70px;
+
+}
+
+.primertitulo h2{
+    font-size: 1em;
+    /* margin: auto; */
+    text-align: center;
+   margin-bottom: 2px;
+  
+}
+
+.iniciocarrousel{
+width: 35%;
+display: none;
+}
+
+.iniciocontenido{
+    margin-top: 10px;
+}
+
+.iniciocontenido img{
+width: 100%;
+margin-bottom: 1rem;
+
+}
+
+
+.mapacaba iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+/* inicio footer */
+
+footer{
+    font-size: 12px;
+}
+
+/* fin footer */
+
+
+
+
+/* SOBRE MI */
+
+.sobremi h2{
+    
+    text-align: center;
+    /* background-colorgb(150, 150, 150)lue; */
+    margin-top: 0.5em;  
+}
+
+.col2 {
+   
+    width:100%;
+    padding: 4em ;
+    height: auto;
+    margin: 2em;
+    margin-left:2px ;
+    margin-right:10px;
+
+  }
+
+  .perfil {
+ 
+    min-height: 320px;
+  }
+
+
+
+
+/* FIN SOBRE MI */
+
+
+/* EMPIEZA MISTERIOS */
+
+.misterio{
+    /* max-width: 97%; */
+    margin: auto;
+    /* background-color: blueviolet; */
+    display:block;
+    box-sizing: border-box;
+}
+
+
+.misterio-container{
+    display: inline; 
+    justify-content: none;
+}
+
+.misterio-item{
+   width: fit-content;
+    /* margin: 10px; */
+    max-width: 95%;
+
+    /* background-color: darkred; */
+  
+}
+
+/* FIN MISTERIOS */
+
+
+
+
+footer{
+  
+    padding: 4em 0;
+    padding-bottom: 5em;
+  
+}
+
+
+
+
+/* EMPIEZA ATRACTIVOS */
+
+.atractivos h3 {
+    margin: 0;
+    /* text-transform: uppercase; */
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.atractivos.libreria{
+    height: 10%;
+    width: 30%;
+}
+
+
+/* FIN ATRACTIVOS */
+
+/* INICIO COSTUMBRES */
+
+.slider{
+    max-width: 85%;
+    display: grid;
+    margin: auto;
+    line-height: 1.5em; 
+    font-size: 0.875em; 
+
+}
+    
+.slider .slides{
+
+    margin-top: 60px;
+
+}
+
+
+/* FIN COSTUMBRES */
+

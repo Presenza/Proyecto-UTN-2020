@@ -6,7 +6,7 @@ font-family: 'Sansita Swashed', cursive;  portada
 body{
     font-family: 'Epilogue', sans-serif;
     font-size: 16px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* background: rgba(50, 209, 209, 0.234); */
 }
 
@@ -20,11 +20,12 @@ h2{   /* quiere decir que todos los h2 del sitio serán iguales */
 
 
 header{
-    background-color: black;
-    background-image: url('../header/imagen/puerto\ maderogrande.jpg') ;
+    /* background-color: black; */
+    background-image: url('../header/imagen/puerto\ maderogrande.jpg');
+    
     /* background-image: linear-gradient(#52c4df, #ad55c1); */
     /* opacity: ; */
-    width: 100%;
+    max-width: 100%;
     height: 550px;
     background-repeat: no-repeat;
     position: relative;  /* para que nav se posicione adelante de la img  */
@@ -39,13 +40,11 @@ header{
 
 
 nav {
-    height: 12%;
-    /* margin: 0; */
-    /* background-color: orangered; */
-    box-sizing: border-box;
-    /* opacity: 100%; */
+ 
   
-    
+  text-align: center;  
+  width: 100%;
+
   
     
 }
@@ -56,21 +55,26 @@ nav ul{
     padding: 0;
     position: fixed;
     background-color: rgba(8, 36, 126, 0.425);
-    width: 100%;       /* ocupa toda la linea el menu */
+     width: 100%;  
+     box-sizing: border-box;
+        /*  ocupa toda la linea el menu */
     /* background-color: red; */
     top: 0%;   /* menu se pegue arriba */
+    
 }
 
 
 
 nav ul li{  
-    display: inline-block;  /* menu uno al lado del otro  */
+    display: inline-block; 
+     /* menu uno al lado del otro  */
     width: 15.3%;  
     /* background-color: green; */
     /* color: goldenrod; */
     padding: 0.2em;
-    margin-left: 0.2em;
-     margin-right: 0.2em;   /* margenes exteriores de la botonera */
+    /* margin-left: 0.2em; */
+     /* margin-right: 0.2em;   margenes exteriores de la botonera */
+     /* text-align: center; */
 
 }
 
@@ -103,10 +107,13 @@ header h1{
     color:whitesmoke;                 /*  rgb(18, 230, 230); */
     font-size: 4.5em;
     margin-left: 1em;
+    display: inline-block;
     
+    padding-top: 3rem;
     /* background-color: sienna; */
-    margin-bottom: 3em;
-    margin-top: -0.01em;
+    /* margin-bottom: 3em; */
+    /* margin-top: -0.01em; */
+
 
 }
 
@@ -117,7 +124,7 @@ main {
     padding: 1em;
     box-sizing: border-box;
     margin-top: 3em; /*me separa el main del header */
-    letter-spacing: 2px;
+    /* letter-spacing: 1.3px; */
     
 }
 
@@ -130,7 +137,7 @@ main {
 
 
 .container{
-    width: 85%;   /* el contenido se ajuste al 85% de la pantalla */
+    max-width: 85%;   /* el contenido se ajuste al 85% de la pantalla */
     margin: 0 auto;
     margin-top: 2em;
     font-size: 18px;
@@ -213,7 +220,7 @@ main {
 .iniciocontenido img{
     box-sizing: border-box;
     border-radius: 3em;
-    width: 23em;
+    width: 30%;
     float: left;
     margin-right: 20px;
   
@@ -267,13 +274,7 @@ footer{
 cursor: pointer;
 border-radius: 3em;
 color: rgba(255, 255, 255, 0.9);
-  /* font-size: 20px;
-  font-weight: 500;
-  padding: 0.5em 1.2em; */
-  
-  /* border: 2px solid; */
-  /* border-color: #318aac; */
-  /* position: relative; */
+
 
 }
 
@@ -303,7 +304,7 @@ color: rgba(255, 255, 255, 0.9);
     /* background-colorgb(150, 150, 150)lue; */
     margin-top: 0.5em;
     box-sizing: border-box;
-    font-size: 4em;
+    font-size: 2.5em;
     
 }
 
@@ -352,9 +353,8 @@ width: 20%;
 
 /* COMIENZA MISTERIOS */
 
-.pmisterio{
-	width: 90%;
-	max-width: 1400px;
+.misterio{
+	max-width: 90%;
 	margin: auto;
 }
 
@@ -481,7 +481,7 @@ width: 20%;
 /* COMIENZO ATRACTIVOS */
 
 .atractivo{
-    width: 1170px;
+    max-width: 85%;
     margin: 2% auto;
        /* para que aparezca la manito */
 }
@@ -507,6 +507,8 @@ width: 20%;
     margin: 0.5em;
     cursor: pointer;
    
+    
+   
     background: linear-gradient(to bottom, rgb(94, 197, 204), rgb(111, 56, 124));
 }
 
@@ -514,6 +516,9 @@ width: 20%;
     width: 100%;
     border-radius: 0.4em;
     border-color: black solid;
+    cursor: pointer;
+    
+    
 }
 
 
@@ -523,6 +528,7 @@ width: 20%;
     font-size: 25px;
     color: #fff;
     text-decoration: none;
+   
 }
 
 .atractivos p {
@@ -541,6 +547,7 @@ width: 20%;
     border-left: 4px solid transparent;
     box-sizing: border-box;
     transform: translateX(100%);
+    
 }
 .atractivos:after {
     position: absolute;
@@ -553,20 +560,26 @@ width: 20%;
     border-right: 4px solid transparent;
     box-sizing: border-box;
     transform: translateX(-100%);
+  
+   
 }
 .atractivos:hover:before {
     border-color: rgb(56, 49, 49);
     height: 100%;
     transform: translateX(0);
     transition: .3s linear, .7s height linear .3s;
+
 }
 .atractivos:hover:after {
     border-color: rgb(56, 49, 49);
     height: 100%;
     transform: translateX(0);
     transition: .3s  linear .3s, .3s height linear .5s;
+    
    
 }
+
+
 
 
 .atractivotext {
@@ -585,49 +598,49 @@ width: 20%;
 }
 
 .slider{
-    max-width: 1100px;
+    max-width: 90%;
     display: flex;
    
   }
-  .slider .card{
+  .slider .slides{
     flex: 1;
     margin: 10px 10px;
     margin-left: 3%;
     background: #fff;
     box-sizing: border-box;
   }
-  .slider .card .img{
+  .slider .slides .img{
     height: 200px;
     width: 100%;
   }
-  .slider .card .img img{
+  .slider .slides .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  .slider .card .content{
+  .slider .slides .content{
     padding: 10px 20px;
   }
-  .card .content .title{
+  .slides .content .title{
     font-size: 25px;
     font-weight: 600;
   }
-  .card .content .sub-title{
+  .slides .content .sub-title{
     font-size: 20px;
     font-weight: 600;
     color: #86149d84;
-    line-height: 20px;
+    line-height: 30px;
   }
-  .card .content p{
-    text-align: justify;
+  .slides .content p{
+   letter-spacing: 1px;
     margin: 10px 0;
   }
-  .card .content .btn{
+  .slides .content .btn{
     display: block;
     text-align: left;
     margin: 10px 0;
   }
-  .card .content .btn button{
+  .slides .content .btn button{
     background: #88138cba;
     color: #fff;
     border: none;
@@ -638,7 +651,7 @@ width: 20%;
     cursor: pointer;
     transition: 0.2s;
   }
-  .card .content .btn button:hover{
+  .slides .content .btn button:hover{
     transform: scale(0.9);
   }
 
@@ -648,7 +661,9 @@ width: 20%;
 /* INICIO CONTACTO */
 
 .containercontacto {
-	max-width: 450px;
+    /* max-width: %; */
+   max-width: 500px;
+
 	height: auto;
 	background-color: #96d4e1a8;
     margin: 5% auto;
@@ -706,4 +721,5 @@ width: 20%;
 }
 
 /* FIN CONTACTO */
+
 
