@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Sansita+Swashed:wght@500;518&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/chico.css" media="handeld, screen and (min-width:280px) and (max-width:1024px)" />
     <!-- <link rel="shortcut icon" href=""> -->
 </head>
 
@@ -32,18 +33,17 @@
         </nav>
 
 
+
         <h1>Curiosidades de Buenos Aires</h1>
     </header>
 
     <main>
         <div class="containercostumbres">
             <h2>Costumbres y tradiciones</h2>
-
-
-
         </div>
-        <div class="slider owl-carousel">
-            <div class="card">
+
+        <div class="slider">
+            <div class="slides">
                 <div class="img">
                     <img loading="lazy" src="costumbres/img/voseo.jpg" alt="Gaturro voseo"></div>
                 <div class="content">
@@ -51,16 +51,17 @@
                         Uso del "Vos"</div>
                     <div class="sub-title">
                         Voseo</div>
-                    <p>
-                        Los
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
-                        nihil minus sed unde voluptas cumque.</p>
+                    <p>El voseo es el uso del pronombre personal VOS en lugar de TU. Es un fenómeno lingüístico que se
+                        da, sobre todo, en Argentina
+                        y en menor medida en Bolivia, Paraguay, Chile y Uruguay.</p>
                     <div class="btn">
-                        <button>Leer más</button>
+                        <a href="https://www.lavoz.com.ar/espacio-publicidad/vos-sabes-que-es-voseo"
+                            target="_blank"><button>Leer más</button></a>
                     </div>
                 </div>
             </div>
-            <div class="card">
+
+            <div class="slides">
                 <div class="img">
                     <img loading="lazy" src="costumbres/img/gastronomia.jpg" alt="Gastronomía argentina"></div>
                 <div class="content">
@@ -68,16 +69,19 @@
                         Comida Típica</div>
                     <div class="sub-title">
                         Gastronomía</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
-                        nihil minus sed unde voluptas cumque.</p>
+                    <p>La gastronomía de la ciudad de Buenos Aires se caracteriza por dos grandes aportes europeos: el
+                        italiano y el español.
+                        Buenos Aires se caracteriza por tener una enorme oferta de bares y restaurantes. La ciudad
+                        cuenta con un privilegiado grupo de 60 bares con gran historia y renombre dentro de la ciudad.
+                    </p>
                     <div class="btn">
-                        <button>Leer más</button>
+                        <a href="https://turismo.buenosaires.gob.ar/es/article/%C2%BFcu%C3%A1l-es-el-sabor-de-la-gastronom%C3%ADa-porte%C3%B1a"
+                            target="_blank"><button>Leer más</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="slides">
                 <div class="img">
                     <img loading="lazy" src="costumbres/img/y.jpg" alt="Yeísmo"></div>
                 <div class="content">
@@ -87,31 +91,34 @@
 
                         <p>Yeísmo</p>
                     </div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil
-                    minus sed unde voluptas cumque.</p>
+                    Esta particularidad del español rioplatense es lo que los lingüistas llaman "yeísmo rehilado", es
+                    decir que, al hablar, no se diferencia entre el sonido de la ye y elle ("yeísmo") y que se articula
+                    con una fricción ("rehilado").</p>
                     <div class="btn">
-                        <button>Leer más</button>
+                        <a href="https://www.bbc.com/mundo/noticias-41741765" target="_blank"><button>Leer
+                                más</button></a>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="slides">
                 <div class="img">
-                    <img loading="lazy" src="costumbres/img/futbol.jpg" alt="Fútbol"></div>
+                    <img loading="lazy" src="costumbres/img/futbol.jpg" target="_blank" alt="Fútbol"></div>
                 <div class="content">
                     <div class="title">
                         Deporte elegido</div>
                     <div class="sub-title">
                         Fútbol</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
-                        nihil minus sed unde voluptas cumque.</p>
+                    <p>El fútbol argentino tiene esa marca registrada que desparrama enfundado en la querida celeste y
+                        blanca. Buenos Aires es la ciudad con mayor cantidad de estadios de fútbol en el mundo. </p>
                     <div class="btn">
-                        <button>Leer más</button>
+                        <a href="https://www.tangol.com/blog/esp/por-que-hay-que-ir-a-ver-un-partido-de-futbol-argentino_nota_471"
+                            target="_blank"><button>Leer más</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
+
+            <div class="slides">
                 <div class="img">
                     <img loading="lazy" src="costumbres/img/palabras.jpg" alt=""></div>
                 <div class="content">
@@ -119,15 +126,15 @@
                         Palabras tipicas</div>
                     <div class="sub-title">
                         Jergas</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
-                        nihil minus sed unde voluptas cumque.</p>
-                    <div class="btn">
-                        <button>Leer más</button>
-                    </div>
+                    <p>El lunfardo es un producto de las lenguas de las corrientes inmigratorias de finales del siglo XIX y principios del XX y nace en el hacinamiento de los conventillos por la necesidad de comunicarse.</p>
+                        <div class="btn">
+                            <a href="https://www.cultura.gob.ar/en-el-dia-del-lunfardo-conoce-de-donde-vienen-muchas-de-las-palabras-que-usamos-a-diario_4604/#:~:text=%22Pibe%22%2C%20%22macana%22,colectivo%20popular%20utiliza%20a%20diario."
+                                target="_blank"><button>Leer más</button></a>
+                        </div>
+                  
                 </div>
             </div>
-            <div class="card">
+            <div class="slides">
                 <div class="img">
                     <img src="costumbres/img/costumbrestango.png" alt="Pareja baila tango"></div>
                 <div class="content">
@@ -135,20 +142,23 @@
                         Baile </div>
                     <div class="sub-title">
                         Tango</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
-                        nihil minus sed unde voluptas cumque.</p>
+                    <p> Además de un género musical, el tango es un modelo de identidad con más de 100 años de
+                        antigüedad. </p>
+
                     <div class="btn">
-                        <button>Leer más</button>
+                        <a href=" <div class=" btn">
+                            <a href="https://turismo.buenosaires.gob.ar/es/article/pasi%C3%B3n-por-el-tango" target="_blank"><button>Leer más</button></a>
                     </div>
+
                 </div>
             </div>
-
         </div>
-        
+        </div>
+
+    </main>
 
 </body>
-</main>
+
 
 
 
