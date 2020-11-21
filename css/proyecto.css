@@ -18,6 +18,71 @@ h2{   /* quiere decir que todos los h2 del sitio serán iguales */
     font-size: 1.7em;
 }
 
+/* NAV NEW */
+
+
+header nav{
+    /* width: 90%; */
+    max-width:100%;
+    /* margin: 20px auto; */
+    background-color: rgba(8, 36, 126, 0.425);
+   
+ 
+  
+}
+
+.menu-bar{
+    display: none;
+    /* ACAAAAAAAAAA SE HIZO LIO CON MARGIN DE ARRIBA!!! */
+    
+    
+}
+
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+    background-color: rgba(8, 36, 126, 0.425);
+    top: 0;
+    margin: 0;
+    padding-top: 0;
+   
+    
+}
+
+header nav ul li{
+   
+   text-align: center;
+   display: inline-block;
+    
+    
+
+}
+
+
+header nav ul li a{
+    color: #fff;
+     padding: 20px;  /*espaciado entre cada palabra del nav */
+    display: block; /* pata que cada palabra de nav sea un bloquecito */
+    text-decoration: none;
+    transition: .3s;
+    margin-left: 70px;
+    
+
+   
+   
+
+}
+
+header nav ul li a:hover{
+    color:rgba(0,0,0,2);
+    /* font-size: 17px; */
+    
+}
+
+
+
+
 
 header{
     /* background-color: black; */
@@ -39,58 +104,7 @@ header{
 
 
 
-nav {
- 
-  
-  text-align: center;  
-  width: 100%;
 
-  
-    
-}
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    background-color: rgba(8, 36, 126, 0.425);
-     width: 100%;  
-     box-sizing: border-box;
-        /*  ocupa toda la linea el menu */
-    /* background-color: red; */
-    top: 0%;   /* menu se pegue arriba */
-    
-}
-
-
-
-nav ul li{  
-    display: inline-block; 
-     /* menu uno al lado del otro  */
-    width: 15.3%;  
-    /* background-color: green; */
-    /* color: goldenrod; */
-    padding: 0.2em;
-    /* margin-left: 0.2em; */
-     /* margin-right: 0.2em;   margenes exteriores de la botonera */
-     /* text-align: center; */
-
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    display: block;    /* sobre mi,contacto, etc se comporte como bloquecito  */
-    border-radius: 50px;
-    transition: .3s;
-}
-
-
-nav a:hover{
-     /* background-color:rgba(0,0,0,2);     hace un cuadradito negro cada boton   */
-     color: black; /*letra de cada boton negra al pasar manito */
      
      
 }
@@ -98,6 +112,8 @@ nav a:hover{
 
 nav  a.activo{
     background-color: rgba(94, 34, 190, 0.507);
+    width:100%;
+
 }
 
 
