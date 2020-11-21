@@ -1,24 +1,50 @@
 
+header nav{
+    width: 80%;
+    margin: 0;
+    left: -100%; 
+    /* con */
+    position: fixed;
+}
+
+header nav ul li{
+    display:block;
+    float: none;
+    /* border-bottom: 1px solid rgb(100, 31, 134); */
+}
+
+header nav ul li a{
+margin: 2px;
+padding: 7px;
+}
 
 
-nav{
-
+.menu-bar {
     display: block;
-    top: 0;
-    text-align: center;
-    margin: auto;   
+    width: 100%;
+    /* background-color: rgba(8, 36, 126, 0.425); */
+   
 }
 
-nav ul{
-    overflow: hidden;
-    position: none;
+
+.menu-bar .bt-menu{
+    display: block;
+    padding: 20px;
+    background:  rgba(23, 3, 41, 0.674);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 27px;
+    box-sizing: border-box;
+    color: navajowhite;
 }
 
-nav ul li{
-    display: inline;  
-    /* background-color: red; */
-    text-align: center;   
+
+.menu-bar span{
+    float: right;
+    font-size: 30px;
+    color: moccasin;
 }
+
 
 
 header{
